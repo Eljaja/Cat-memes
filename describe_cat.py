@@ -43,7 +43,7 @@ def describe_cat_meme(image_path: str) -> str:
         "<image>\n"
         "Describe this meme cat in the format:\n"
         "Emotion: <one word>\n"
-        "Description: <desribe idea of meme to 15 words>"
+        "Description: <15 tags about the meme>"
     )
     inputs = processor(text=prompt, images=img, return_tensors="pt").to(model.device)
     out_ids = model.generate(**inputs, max_new_tokens=60)
