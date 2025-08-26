@@ -3,7 +3,7 @@ import uuid
 from PIL import Image
 
 # Папка с котами
-folder = './cats_from_memes'
+folder = './cats_from_memes/cats_from_memes'
 
 for filename in os.listdir(folder):
     file_path = os.path.join(folder, filename)
